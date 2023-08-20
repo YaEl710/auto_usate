@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserisci Nuovo Veicolo</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    
+  
+</head>
+<body>
+    <header style="background-color: #733A6A;">
+        <h1>Inserisci Nuovo Veicolo</h1>
+        <button onclick="window.location.href='index.html'" style="border: none;border-radius: 10px;background-color: #733A6A;;color: white;font-size: larger;"><b>Torna Indietro</b></button>
+    </header>
+    <main>
+    <form id="inserisciVeicoloForm">
+        <table>
+            <tr class="label">
+                <td class="label"><label for="modello">Modello:</label></td>
+                <td class="label"><label for="km">KM:</label></td>
+                <td class="label"><label for="carburante">Carburante:</label></td>
+                <td class="label"><label for="prezzo">Prezzo:</label></td>
+                <td class="label"><label for="venditore">Venditore:</label></td>
+                <td class="label"><label for="tipoCambio">Tipo Cambio:</label></td>
+                <td class="label"><label for="longitudine">Longitudine:</label></td>
+                <td class="label"><label for="latitudine">Latitudine:</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="modello" name="modello" required></td>
+                <td><input type="number" id="km" name="km" required></td>
+                <td><input type="text" id="carburante" name="carburante" required></td>
+                <td><input type="number" id="prezzo" name="prezzo" required></td>
+                <td><input type="text" id="venditore" name="venditore" required></td>
+                <td><input type="text" id="cambio" name="cambio" required></td>
+                <td><input type="number" step="any" id="longitudine" name="longitudine" required></td>
+                <td><input type="number" step="any" id="latitudine" name="latitudine" required></td>
+            </tr>
+            
+        </table>
+    </main>
+        <footer style="background-color: #339042;">
+        <button type="submit" style="background-color: #339042;color: white;border: 2px solid #339042;border-radius: 10px;padding: 10px 20px;font-size: larger;"><b>Inserisci Veicolo</b></button>
+    </footer>
+    </form>
+    
+    <script src="../JS/aggiugniauto.js"></script>
+</body>
+</html>
